@@ -17,3 +17,9 @@ server_script {
 shared_script '@ox_lib/init.lua'
 
 shared_script '@es_extended/imports.lua'
+
+dependencies {
+    'ox_lib',
+    'es_extended',
+    'astro_lib'
+}
