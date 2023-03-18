@@ -224,7 +224,7 @@ mamauto = false
     mamauto = true
     SetNewWaypoint(226.9854, 1172.4354)
 end)
-else ESX.ShowNotification('Masz juz 1 pojazd')
+else exports['astro_lib']:notify('inform', 'Masz juz 1 wyciagniety pojazd', 5000)
 end
 end
 end
@@ -295,7 +295,7 @@ if mamauto == true then
         pos = vec3(0.03, 0.03, 0.02),
         rot = vec3(0.0, 0.0, -1.5)
     },
-}) then lib.callback('astro:ramen:dodajkaske')  SetNewWaypoint(-140.9520, 275.8996) exports['Astro-NotifySystem']:Notify('error', 'Wejdz do pojazdu sluzbowego, i zdaj pojazd!') else mamauto = true end
+}) then lib.callback('astro:ramen:dodajkaske')  SetNewWaypoint(-140.9520, 275.8996) exports['astro_lib']:notify('inform', 'Wejdz do pojazdu sluzbowego i go oddaj w rece firmy', 5000) else mamauto = true end
     end
 end
 end
